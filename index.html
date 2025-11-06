@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assests/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container py-4">
+            <div class="d-flex align-items-center gap-2">
+                <img src="assests/images/logo (1).png" alt="logo">
+                <div class="d-flex flex-column lh-1">
+                    <a class="navbar-brand m-0 p-0 text-light" href="#">Weather</a>
+                    <a class="navbar-brand m-0 p-0 pt-2 font" href="#">tagline goes here</a>
+                </div>
+            </div>            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item p-4">
+                        <a class="nav-link active text-light nav-border" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item p-4">
+                        <a class="nav-link text-light nav-border" aria-current="page" href="#">News</a>
+                    </li>
+                    <li class="nav-item p-4">
+                        <a class="nav-link text-light nav-border" aria-current="page" href="#">cameras</a>
+                    </li>
+                    <li class="nav-item p-4">
+                        <a class="nav-link text-light nav-border" aria-current="page" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item p-4">
+                        <a class="nav-link text-light nav-border" aria-current="page" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>   
+
+    <div class="hero">
+        <div class="position-relative w-75 m-auto mt-5">
+            <input type="text" class="form-control tabindex=-1 border-0 rounded-5 ps-3 pe-5" id="searchInput" oninput="searchCity()" placeholder="Find your location..." aria-label="Location">
+            <button class="btn rounded-5 position-absolute top-50 end-0 translate-middle-y me-1" type="button">Find</button>
+        </div>
+
+        <div class="weather-table container w-75 position-absolute">
+            <div class="row">
+                <div class="col-4 p-0 light">
+                    <div class="container header d-flex justify-content-between p-1">
+                        <div class="day"></div>
+                        <div class="date"></div>
+                    </div>
+                    <div class="content">
+                        <h5 class="country ps-4 pt-4"></h5>
+                        <p class="avg-temp today-font text-light ps-4 mb-0"></p>
+                        <p class="icon ps-3 mb-0"></p>
+                        <p class="weather ps-4"></p>
+                        <div class="d-flex">
+                            <p class="p-2"><span><i class="fa-solid fa-umbrella p-1"></i></span>20%</p>
+                            <p class="p-2"><span><i class="fa-solid fa-wind p-1"></i></span>18km/h</p>
+                            <p class="p-2"><span><i class="fa-regular fa-compass p-1"></i></span>East</p>
+                        </div>
+                    </div>                   
+                </div>
+                <div class="col-4 p-0 dark text-center">
+                    <div class="container header text-center p-1">
+                        <div class="day"></div>
+                        <div class="date"></div>
+                    </div>         
+                    <div class="content mt-5">
+                        <div class="icon"></div>
+                        <div class="max-temp text-light fs-2"></div>
+                        <div class="min-temp"></div>
+                        <div class="weather mt-2"></div>
+                    </div>          
+                </div>
+                <div class="col-4 p-0 light text-center">
+                    <div class="container header text-center p-1">
+                        <div class="day"></div>
+                        <div class="date"></div>
+                    </div>
+                    <div class="content mt-5">
+                        <div class="icon"></div>
+                        <div class="max-temp text-light fs-2"></div>
+                        <div class="min-temp"></div>
+                        <div class="weather mt-2"></div>
+                    </div>     
+                </div>                               
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container d-flex justify-content-between align-items-center mt-3 px-5">
+            <div class="search-wrap">
+                <input type="text" class="form-control border-0 rounded-5 ps-3" placeholder="Enter your email to subscribe..." aria-label="email">
+                <button class="btn rounded-5 subscribe-btn position-absolute top-50" type="button">Subscribe</button>
+            </div>
+            <div class="icons w-50 d-flex gap-2 align-items-center justify-content-center">
+                <a href="#" class="d-flex justify-content-center align-items-center"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                <a href="#" class="d-flex justify-content-center align-items-center"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                <a href="#" class="d-flex justify-content-center align-items-center"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                <a href="#" class="d-flex justify-content-center align-items-center"><i class="fa-solid fa-envelope fa-lg"></i></a>
+            </div>
+        </div>
+        <p class="container ps-5 text-light">Copyright 2025 Company name. Designed by Malak. All rights reserved</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

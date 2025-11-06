@@ -1,0 +1,129 @@
+body{
+    background-color: #1e202b;
+}
+.navbar{
+    color: white;
+}
+.font{
+    font-size: 10px !important;
+    color: grey !important;
+}
+.nav-border{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 2px solid transparent; 
+  border-radius: 15px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.nav-border:hover,
+.nav-border.active{
+  border-color: #009ad8;
+  color: #009ad8 !important;
+}
+.hero{
+    background-image: url(assests/images/banner.png);
+    height: 80vh;
+    overflow: auto;
+    background-repeat: no-repeat;
+}
+.hero input,
+.footer input{
+    background-color: #1e202b;
+    height:55px;
+    color: white !important;
+}
+.hero input::placeholder,
+.footer input::placeholder{
+    color: grey;
+}
+.hero button,
+.footer button{
+    background-color: #009ad8;
+    width: 100px;
+    height: 45px;
+    color: white;
+}
+.hero button:hover,
+.hero button:active{
+    background-color: #009ad8 !important;
+    color: white !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+input:focus{
+    box-shadow: none !important;
+    background-color: #1e202b !important;
+    outline: none;
+    caret-color: #fff;
+}
+.weather-table{
+    border-radius: 10px !important;
+    overflow: hidden;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.header{
+    position: relative;
+    width: 100%;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.267);
+}
+.light{
+    background-color: #3f4254;
+    color: #bfc1c8;
+}
+.dark{
+    background-color: #2e3040;
+    color: #bfc1c8;
+}
+.today-font{
+    font-size: 80px;
+    font-weight: bolder;
+}
+.icon img{
+    width: 80px;
+}
+.weather{
+    color: #009ad8;
+}
+.footer{
+    height: 25vh;
+    background-color: #262936;
+    overflow: auto;
+}
+.search-wrap{
+    position: relative;
+    margin: 1.5rem 0;
+    width: 60%;
+}
+.search-wrap .form-control{
+    width: 100%;
+    box-sizing: border-box;
+}
+.search-wrap .subscribe-btn{
+    right: 8px;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 45px;
+}
+.icons a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.04);
+    color: #009ad8;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.icons a:hover{
+    background: #009ad8;
+    color: #fff;
+}
